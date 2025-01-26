@@ -1,23 +1,26 @@
 
-body{
+body,html{
     margin:0;
     padding: 0;
+    overflow-x: hidden;
+    
+
 }
 .header{
     display: flex;
-    margin: 0;
-    padding: 0;
     color: white;
     padding-top: 12px;
-    justify-content: center;
-    justify-content: space-between;
-    gap: auto;
+    justify-content:space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+   
 }
 .header ul{
     display: flex;
     margin: 0;
+    padding: 0;
     color: white;
-    gap: 16px;
+    gap: 11px;
     
 
 }
@@ -31,13 +34,14 @@ ul{
 }
 .container1{
     display: flex;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     flex-direction: column;
     gap: 45px;
+    flex-wrap: wrap;
     background-color: #1F2937;
-    padding-left: 50px;
-    padding-right: 50px;
+   
+
   
 
 
@@ -45,31 +49,38 @@ ul{
 
 .container2{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     color: white;
     margin-left: auto;
     margin-right: auto;
-    max-width: 708px;
-    max-height: 220px;
     padding-bottom: 50px;
+    flex-shrink: auto;
+    padding: auto;
     
     
 
 }
-img{
+.container1 img{
     margin: 20px;
-    margin-right: auto;
     border: 1px solid white;
     border-radius: 14px;
+    max-height: 210px;
+    max-width:380px;
+
+    
     
 }
 .container3{
     display: flex;
     flex-direction: column;
+    align-items: center;
     flex-wrap: wrap;
     margin-left: auto;
-    gap: 4px;   
+    margin-right: auto;
+    gap: 4px;  
+    max-width: 400px; 
  
 
 }
@@ -108,7 +119,8 @@ img{
 }
 .container4 img{
     margin: 0;
-    border: 3px solid lightgray;
+    border: 3px solid #1F2937;
+    border-radius: 12px;
 
 }
 .container4 p{
@@ -119,6 +131,8 @@ img{
 }
 .container5{
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     gap: 44px;
@@ -151,9 +165,10 @@ img{
 
 }
 .container7 span{
-    display: block;
-    margin-left: 346px;
-    margin-top: 3px;
+    display: flex;
+    justify-content: end;
+    margin-left: auto;
+    margin: top 4px;;
     font-size: 16px;
     font-weight: 590;
 }
@@ -168,20 +183,21 @@ img{
 }
 .container9{
     display: flex;
+    flex:1;
     align-items: center;
-    max-height: 200px;
-    min-height: 100px;
+    min-height: 120px;
     background-color:#3882F6;
     justify-content: center;
-    padding-left: 90px;
-    padding-right: 90px;
-    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: space-around;
     border-radius: 5px;
     color: white;
 }
     
 .container9 button{
-    margin-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
     background-color:#3882F6;
     border-radius: 5px;
     border-color: white;
@@ -199,4 +215,7 @@ img{
     background-color:#1F2937;
     padding: 22px;
     color: white;
+}
+.container9 .button{
+    min-width: 61px;
 }
